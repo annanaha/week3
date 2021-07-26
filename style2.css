@@ -1,0 +1,640 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  
+}
+
+.pd{
+  padding-top:60px ;
+  padding-bottom: 80px;
+}
+.mb-6{
+  margin-bottom: 24px;
+}
+
+.mb-2{
+  margin-bottom: 8px;
+}
+.mb-5{
+  margin-bottom: 20px;
+}
+.mb-6{
+  margin-bottom: 24px;
+}
+.mb-8{
+  margin-bottom: 32px;
+}
+.mb-10{
+  margin-bottom: 40px;
+}
+.mb-12{
+  margin-bottom: 48px;
+}
+.mr-8{
+  margin-right: 32px;
+}
+.ml-8{
+  margin-left: 32px;
+}
+
+.mg{
+  margin: 0 72px;
+}
+.text-align-c{
+  text-align: center;
+}
+.jcc-space-b{
+  justify-content: space-between;
+}
+
+img{
+  max-width:100% ;
+  height: auto;
+  vertical-align: middle;
+}
+.d-block{
+  display: block;
+}
+.d-flex{
+  display: flex;
+}
+
+.align-i-c{
+  align-items: center;
+}
+.wrap{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header{
+  background-color: #AA0601;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.logo{
+  margin-left: 88px;
+}
+
+.nav a{
+  color: #fff;
+  text-decoration: none;
+  transition: .3s ease;
+  padding-right: 64px;
+}
+/* banner區塊 */
+.banner{
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  height: 840px;
+  color:#650300;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.box{
+  width: 1110px;
+}
+.banner h1{
+  font-size: 64px;
+  font-weight:bold;
+}
+.banner h3{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.h2title{
+  font-size: 48px;
+  color: #650300;
+  font-weight: bold;
+}
+/* 用專業的心 */
+.bg-pink{
+  background-color: #AA06010D;
+  color: #650300;
+}
+
+.bg-pink li{
+  width: 23%;
+}
+.bg-pink h4{
+  font-size: 24px;
+}
+.bg-pink p{
+  color: #000000;
+  text-align: left;
+}
+.imgbox{
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+/* 經典系列 */
+.classic img{
+  width: 58%;
+}
+.classic-2{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+
+.classic-text{
+  width: 42%;
+}
+
+.glassstyle{
+  color: #AA0601;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.material-icons-outlined{
+  color: #AA0601;
+  font-size: 44px;
+  margin-right: 10px;
+
+}
+/* 聯名設計 */
+.co-branding{
+  
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+}
+.co-branding h2{
+  color: #fff;
+}
+.co-branding ul{
+  flex-wrap: wrap;
+}
+
+.co-branding li{
+  position: relative;
+  background-color: #fff;
+  width: 48%;
+}
+
+
+.co-branding img{
+  
+  opacity: 0.5;
+}
+.brandtext{
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  color: #AA0601;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 顧客推薦 */
+.customer ul{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.customer-list{
+  width: 23%;
+  height: 460px;
+  box-shadow: 0px 2px 6px #00000029;
+  flex-direction: column;
+  border-radius: 4px 4px 0px 0px; 
+}
+.customer img{
+  width: 100%;
+  border-radius: 4px 4px 0px 0px; 
+}
+.text{
+  padding: 16px;
+  color: #212529;
+}
+.date{
+  padding: 16px;
+  color: #707070;
+  font-size: 14px;
+}
+/* .recommend{
+  height: 204px;
+  flex-direction: column; 
+  padding: 16px;
+  
+} */
+
+/* 聯絡我們 */
+.contactus{
+  background-color: #AA06010D;
+}
+.contactus p{
+  font-size: 20px;
+}
+.contact-wrap{
+  width: 760px;
+}
+.contactus h2{
+  color: #000000;
+}
+.contactus label{
+  display: block;
+  margin-bottom: 4px;
+}
+
+.inputbox,textarea{
+  width:100%;
+  height: 50px;
+  background-color: none;
+  margin-bottom: 16px;
+  cursor:pointer;
+  border: 1px solid #000;
+  outline: none;
+  padding: 12px 16px;
+  background-color: transparent;
+  font-size: 16px;
+}
+.contactus textarea{
+  height: 136px;
+}
+.check{
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.privacy{
+  display: inline-block;
+  
+}
+.btn-submit{
+  width: 350px;
+  height: 54px;
+  background-color:#AA0601;
+  border:0;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  cursor:pointer;
+  transition: .3s ease;
+}
+.btn-submit:hover{
+  background-color: #650300;
+}
+
+.footer{
+  background-color: #AA0601;
+  color: #fff;
+  padding: 32px 0 39px;
+  
+}
+.menu a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 48px;
+  transition: .3s ease;
+ 
+}
+.social a{
+  margin-left: 32px;
+  transition: .3s ease;
+}
+.social a:hover{
+  opacity: 0.5;
+}
+.contact-info{
+  border-bottom: 1px solid #fff;
+}
+.contact-info img{
+  width: 36px;
+}
+.contact-info a{
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+  transition: .3s ease;
+}
+.contact-info a:hover,.menu a:hover,.terms a:hover,.nav a:hover{
+  color:#650300;
+}
+.copyright p{
+  font-family: Roboto ;
+
+}
+.terms a{
+  color:#fff;
+  text-decoration: none;
+  transition: .3s ease;
+  margin-left: 48px;
+}
+
+
+@media(max-width:992px){
+  .pd{
+    padding-top:40px ;
+    padding-bottom: 56px;
+  }
+  .banner h1{
+    font-size: 48px;
+  }
+  .banner h3{
+    font-size: 20px;
+
+  }
+  .h2title{
+    font-size: 32px;
+  }
+  
+  .wrap{
+    max-width: 690px;
+  }
+  .bg-pink ul{
+    flex-wrap: wrap;
+  }
+  .bg-pink li{
+    width: 48%;
+    margin-bottom: 32px;
+  }
+  .classic-2{
+    flex-direction: row;
+  }
+  .classic-2 img{
+    margin-right: 32px;
+    margin-left: 0;
+  }
+  .classic li{
+    margin-bottom: 8px;
+  }
+  .glassstyle{
+    font-size: 28px;
+    font-family: Roboto;
+  }
+  
+  .material-icons-outlined{
+    font-size: 36px;
+    margin-right: 3px;
+  }
+  .brandtext{
+    font-size: 32px;
+  }
+  .customer-list{
+    width: 48%;
+    margin-bottom: 32px;
+     
+  }
+  .contact-wrap{
+    width: 480px;
+  }
+  .inputbox,textarea{
+    height: 36px;
+  }
+  .contactus p{
+    font-size: 16px;
+  }
+  .contactus .privacy{
+    font-size: 14px;
+  }
+  .check{
+    width: 18px;
+    height: 18px;
+  }
+  .menu a{
+    margin-right: 40px; 
+  }
+  .social a img{
+    width: 24px;
+  }
+  .contact-info img{
+    width: 20px;
+    height: 20px;
+  }
+  .contact-info a{
+    font-size: 20px;
+  }
+}
+
+/* 手機板 */
+@media(max-width:414px){
+  .pd{
+    padding-top:32px ;
+    padding-bottom: 40px;
+  }
+  .header{
+    flex-wrap: wrap;
+    padding: 0;
+    background-color:#fff;
+  }
+  .logobox{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    background-color:#AA0601 ;
+  }
+  .logo{
+    margin-left: 0;
+    width: 48px;
+    padding: 10px 0;
+  }
+  .nav{
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  .nav li{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1px;
+  }
+  .nav li:nth-child(2n){
+    border-left: 1px solid #fff;
+  }
+  .nav a{
+    font-size: 20px;
+    padding:8px 0;
+    display: block;
+    background-color:#AA0601 ;
+  }
+  
+  .banner{
+    height: 394px;
+  }
+  .banner h1{
+    font-size: 32px;
+  }
+  .banner h3{
+    font-size: 16px;
+
+  }
+  .h2title{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .wrap{
+    max-width: 375px;
+  }
+  .bg-pink ul{
+    flex-wrap: wrap;
+  }
+  .bg-pink li{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .classic-2{
+    flex-direction: row;
+  }
+  .classic-2 img{
+    margin-right: 32px;
+    margin-left: 0;
+  }
+  .classic li{
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .classic img{
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+  .classic-text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+  .glassstyle{
+    font-size: 28px;
+    font-family: Roboto;
+  }
+  
+  .material-icons-outlined{
+    font-size: 36px;
+    margin-right: 3px;
+  }
+  .co-branding li{
+    width: 100%;
+    margin-bottom: 16px; 
+  }
+  .brandtext{
+    font-size: 32px;
+  }
+  .customer-list{
+    width: 100%;
+    margin-bottom: 32px;
+     
+  }
+  .contact-wrap{
+    width: 480px;
+  }
+  .inputbox,textarea{
+    height: 36px;
+  }
+  .contactus p{
+    font-size: 16px;
+  }
+  .contactus .privacy{
+    font-size: 14px;
+  }
+  .check{
+    width: 18px;
+    height: 18px;
+  }
+  .btn-submit{
+    width: 165px;
+    height: 36px;
+  }
+  .linkbar{
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .menu{
+    display: none;
+  }
+  .social a img{
+    width: 24px;
+  }
+  .contact-info{
+    margin-top: -24px;
+  }
+  .contact-info img{
+    width: 16px;
+    height: 16px;
+  }
+  .contact-info a{
+    font-size: 16px;
+  }
+  .copyright,.terms{
+    flex-wrap: wrap;
+  }
+  .copyright p{
+    width: 100%;
+  }
+  .terms li{
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .terms a{
+    margin-left: 0;
+  }
+}
+
